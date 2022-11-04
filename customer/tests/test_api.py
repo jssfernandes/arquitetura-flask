@@ -1,6 +1,3 @@
-from decimal import Decimal
-
-
 def test_customers_get_all(client, customers):  # Arrange
     """Test get all customers"""
     # Act
