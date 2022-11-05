@@ -3,7 +3,6 @@ DEBUG = false
 FLASK_ADMIN_NAME = "Painel Admin"
 FLASK_ADMIN_TEMPLATE_MODE = "bootstrap3"
 FLASK_ADMIN_SWATCH = 'darkly'
-SQLALCHEMY_DATABASE_URI = 'sqlite:///development.db'
 TITLE = "Customer"
 SECRET_KEY = "e1c82986-5d42-42d4-a142-2512e728159f"
 PASSWORD_SCHEMES = ['pbkdf2_sha512', 'md5_crypt']
@@ -19,6 +18,7 @@ EXTENSIONS = [
 
 
 [development]
+SQLALCHEMY_DATABASE_URI = 'mysql://USER:PASS@HOST:PORT/DATABASE'
 EXTENSIONS = [
     "flask_debugtoolbar:DebugToolbarExtension",
     "dynaconf_merge_unique"  # to reuse extensions list from [default]
@@ -48,4 +48,4 @@ SQLALCHEMY_DATABASE_URI = 'sqlite:///testing.db'
 
 
 [production]
-SQLALCHEMY_DATABASE_URI = 'sqlite:///production.db'
+SQLALCHEMY_DATABASE_URI = 'mysql://USER:PASS@HOST:PORT/DATABASE'

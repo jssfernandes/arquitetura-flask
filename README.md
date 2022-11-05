@@ -4,23 +4,26 @@
 ## Clone
 
 ```bash
-git clone https://github.com/jssfernandes/arquitetura-flask.git
+git clone -b feature/base-dados-mysql https://github.com/jssfernandes/arquitetura-flask.git
 ```
 
 ## ou faça o download
 
-https://github.com/jssfernandes/arquitetura-flask/archive/main.zip
+https://github.com/jssfernandes/arquitetura-flask/archive/feature/base-dados-mysql.zip
 
 ou
 
 ```bash
-wget https://github.com/jssfernandes/arquitetura-flask/archive/main.zip
+wget https://github.com/jssfernandes/arquitetura-flask/archive/feature/base-dados-mysql.zip
 ```
 
 ## Ambiente
 
 Python 3.6+
+
 Ative a sua virtualenv
+
+Edite o arquivo "**settings.toml**" e inclua a conexão de seu mysql
 
 ```bash
 pip install -r requirements.txt
