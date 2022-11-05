@@ -18,7 +18,7 @@ EXTENSIONS = [
 
 
 [development]
-SQLALCHEMY_DATABASE_URI = 'mysql://USER:PASS@HOST:PORT/DATABASE'
+SQLALCHEMY_DATABASE_URI = 'mysql://<username>:<password>@<host>:<port>/<databasename>[?<options>]'
 EXTENSIONS = [
     "flask_debugtoolbar:DebugToolbarExtension",
     "dynaconf_merge_unique"  # to reuse extensions list from [default]
