@@ -9,18 +9,27 @@ git clone https://github.com/jssfernandes/arquitetura-flask.git
 
 ## ou faça o download
 
-https://github.com/jssfernandes/arquitetura-flask/archive/main.zip
+https://github.com/jssfernandes/arquitetura-flask/archive/feature/base-dados-oracle.zip
 
 ou
 
 ```bash
-wget https://github.com/jssfernandes/arquitetura-flask/archive/main.zip
+wget https://github.com/jssfernandes/arquitetura-flask/archive/feature/base-dados-oracle.zip
 ```
 
 ## Ambiente
 
 Python 3.6+
+
 Ative a sua virtualenv
+
+Configurar as variaveis de ambiente contendo os acessos da base de dados Oracle
+```
+db_username=usuario da base de dados oracle
+db_password=senha para o usuario
+dsn_name=configurações do DSN do host
+tns_admin=diretorio do Oracle Instant Client da versao do sistema operacional se 64bits usar o compativel vide doc https://cx-oracle.readthedocs.io/en/latest/user_guide/installation.html
+```
 
 ```bash
 pip install -r requirements.txt
